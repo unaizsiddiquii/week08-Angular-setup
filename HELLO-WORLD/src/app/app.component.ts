@@ -15,10 +15,19 @@ export class AppComponent {
   url = 'https://www.bridgelabz.com/';
 
   userName: string = '';
+  errorMessage: string = '';
   onClick() {
     window.open(this.url, '_blank');
   }
-
+  valideteInput() {
+    const namePatten = /^[A-Z][a-zA-Z]{2,}$/;
+    if (!this.userName.match(namePatten)) {
+      this.errorMessage =
+        'Invalid name!';
+    } else {
+      this.errorMessage = '';
+    }
+  }
   ngOnInit(): void {
     this.title = ' from BridgeLabz';
   }

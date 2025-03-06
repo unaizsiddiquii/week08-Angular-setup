@@ -4,6 +4,7 @@
     <img (click)=onClick() [src]="imgUrl" alt="BrigdeLabz logo." />
   </div>
 
-  <div> <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+  <div> <input type="text" [(ngModel)]="userName" (input)="valideteInput()" placeholder="Enter your name">
+    <p class="errorMessage">{{errorMessage}}</p>
   </div>
 </div>
