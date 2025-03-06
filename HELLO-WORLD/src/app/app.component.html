@@ -1,4 +1,9 @@
 <div>
-  <h1 class="hello">{{this.title}}</h1>
-  <img (click)= onClick() [src]="imgUrl" alt="BrigdeLabz logo." />
+  <div>
+    <h1 class="hello">Hello <span>{{userName}}</span>{{this.title}}</h1>
+    <img (click)=onClick() [src]="imgUrl" alt="BrigdeLabz logo." />
+  </div>
+
+  <div> <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+  </div>
 </div>

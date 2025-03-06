@@ -1,7 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .hello {
   color: rgba(0, 0, 255, 0.671);
   text-align: center;
   text-shadow: 2px 3px 5px gray;
+  font-size: 4em;
+}
+.hello span {
+  color: rgba(0, 0, 0, 0.674);
 }
 
 img {
@@ -9,7 +18,13 @@ img {
   margin: 0 auto;
   width: 15%;
   cursor: pointer;
-  &:hover {
-    transform: scale(1.1);
-  }
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
 }
