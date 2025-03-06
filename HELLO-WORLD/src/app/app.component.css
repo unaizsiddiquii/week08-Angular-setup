@@ -2,5 +2,10 @@
   color: rgba(0, 0, 255, 0.671);
   text-align: center;
   text-shadow: 2px 3px 5px gray;
-  scale: 2;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 15%;
 }
