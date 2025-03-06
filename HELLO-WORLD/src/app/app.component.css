@@ -18,13 +18,22 @@ img {
   margin: 0 auto;
   width: 15%;
   cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 input {
   display: block;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 2px solid  rgba(0, 0, 255, 0.671);;
   border-radius: 5px;
   padding: 10px 20px;
   text-align: center;
+}
+
+.errorMessage {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
 }
